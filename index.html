@@ -12,62 +12,68 @@
 
 <body>
     <header class="header">
-        <div class="header__top">
-            <div class="header__logo logo">
-                <img class="logo__image" src="./img/logo.png" alt="Tesla">
-            </div>
-            <nav class="header__menu menu">
-                <a href="#" class="menu__item">Model S</a>
-                <a href="#" class="menu__item">Model X</a>
-                <a href="#" class="menu__item">Model 3</a>
-                <a href="#" class="menu__item">Roadster</a>
-                <a href="#" class="menu__item">Energy</a>
-            </nav>
-            <div class="header__actions actions">
-                <div class="actions__link">Магазин</div>
-                <div class="actions__link">Войти</div>
-                <button class="actions__button">
-                    <img src="./img/icons/menu.svg" alt="Открыть меню">
-                </button>
-            </div>
-        </div>
-        <div class="header__title title">
-            <h1 class="title__model">Model S</h1>
-            <h2 class="title__slogan">Добро пожаловать в будущее!</h2>
-            <img class="title__image" src="./img/fill_car.png" alt="Tesla - model S">
-            <div class="title__overlay"><img src="./img/tesla.svg" alt=""></div>
-        </div>
-        <div class="header__merits merits">
-            <div class="merits__list">
-                <div class="merits__item">
-                    <div class="merits__icon">
-                        <img src="./img/icons/speed.svg" alt="Скорость 0-100км/ч за 2.7 сек">
-                    </div>
-                    <div class="merits__velue"><span>2,7</span>сек</div>
-                    <div class="merits__descr">0-100 км/час</div>
+        <div class="header__wrap">
+            <div class="header__top">
+                <div class="header__logo logo">
+                    <img class="logo__image" src="./img/logo.png" alt="Tesla">
                 </div>
-                <div class="merits__item">
-                    <div class="merits__icon">
-                        <img src="./img/icons/road.svg" alt="Запас хода">
-                    </div>
-                    <div class="merits__velue"><span>632</span>км</div>
-                    <div class="merits__descr">запас хода</div>
-                </div>
-                <div class="merits__item">
-                    <div class="merits__icon">
-                        <img src="./img/icons/test.svg" alt="Тест драйв">
-                    </div>
-                    <div class="merits__velue">тест драйв</div>
-                </div>
-                <div class="merits__item">
-                    <a href="#" class="merits__btn">заказать</a>
+                <nav class="header__menu menu">
+                    <a href="#" class="menu__item menu__item_active">Model S</a>
+                    <a href="#" class="menu__item">Model X</a>
+                    <a href="#" class="menu__item">Model 3</a>
+                    <a href="#" class="menu__item">Roadster</a>
+                    <a href="#" class="menu__item">Energy</a>
+                </nav>
+                <div class="header__actions actions">
+                    <a href="#" class="actions__link">Магазин</a>
+                    <a href="#" class="actions__link">Войти</a>
+                    <button class="actions__button">
+                        <img src="./img/icons/menu.svg" alt="Открыть меню">
+                    </button>
                 </div>
             </div>
-        </div>
-        <div class="header__arrow arrow">
-            <a class="arrow__link" href="#">
-                <img class="arrow__image" src="./img/icons/arrow.svg" alt="Далее">
-            </a>
+            <div class="header__title title">
+                <h1 class="title__model">Model S</h1>
+                <h2 class="title__slogan">Добро пожаловать в будущее!</h2>
+                <img class="title__image" src="./img/fill_car.png" alt="Tesla - model S">
+                <div class="title__overlay"><img src="./img/tesla.svg" alt=""></div>
+            </div>
+            <div class="header__merits merits">
+                <div class="merits__list">
+                    <div class="merits__item">
+                        <div class="merits__icon">
+                            <img src="./img/icons/speed.svg" alt="Скорость 0-100км/ч за 2.7 сек">
+                        </div>
+                        <div class="merits__info">
+                            <div class="merits__value"><span>2,7</span>сек</div>
+                            <div class="merits__descr">0-100 км/час</div>
+                        </div>
+                    </div>
+                    <div class="merits__item">
+                        <div class="merits__icon">
+                            <img src="./img/icons/road.svg" alt="Запас хода">
+                        </div>
+                        <div class="merits__info">
+                            <div class="merits__value"><span>632</span>км</div>
+                            <div class="merits__descr">запас хода</div>
+                        </div>
+                    </div>
+                    <div class="merits__item">
+                        <div class="merits__icon">
+                            <img src="./img/icons/test.svg" alt="Тест драйв">
+                        </div>
+                        <div class="merits__value">тест драйв</div>
+                    </div>
+                    <div class="merits__item">
+                        <a href="#" class="merits__btn">заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__arrow arrow">
+                <a class="arrow__link" href="#">
+                    <img class="arrow__image" src="./img/icons/arrow.svg" alt="Далее">
+                </a>
+            </div>
         </div>
     </header>
     <section class="specifications">
@@ -90,25 +96,30 @@
                             <div class="merits__icon">
                                 <img src="./img/icons/phone.svg" alt="17 дюймов">
                             </div>
-                            <div class="merits__velue"><span>17</span>дюймов</div>
-                            <div class="merits__descr">Большой дисплей</div>
+                            <div class="merits__info">
+                                <div class="merits__value"><span>17</span>дюймов</div>
+                                <div class="merits__descr">Большой дисплей</div>
+                            </div>
+
                         </div>
                         <div class="merits__item">
                             <div class="merits__icon">
                                 <img src="./img/icons/wifi.svg" alt="Беспроводное обновление ПО">
                             </div>
-                            <div class="merits__velue">Беспроводное обновление ПО</div>
-                            <div class="merits__descr">Повышенная функциональность</div>
-                        </div>
-                        <div class="merits__item">
-                            <div class="merits__velue">тест драйв</div>
+                            <div class="merits__info">
+                                <div class="merits__value">Беспроводное обновление ПО</div>
+                                <div class="merits__descr">Повышенная функциональность</div>
+                            </div>
+
                         </div>
                         <div class="merits__item">
                             <div class="merits__icon">
                                 <img src="./img/icons/bag.svg" alt="894 литра">
                             </div>
-                            <div class="merits__velue"><span>894</span>литра</div>
-                            <div class="merits__descr">Объем грузового пространства</div>
+                            <div class="merits__info">
+                                <div class="merits__value"><span>894</span>литра</div>
+                                <div class="merits__descr">Объем грузового пространства</div>
+                            </div>
                         </div>
                     </div>
                 </div>

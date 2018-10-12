@@ -1,3 +1,203 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+/* Header */
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__top{
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__wrap{
+    width: 1341px;
+}
+.header__merits{
+    margin-top: 25px;
+}
+/* logo */
+.logo{
+    width: 166px;
+    height: 51px;
+}
+.logo__image{
+    width: 100%;
+}
+
+/* Menu */
+.menu__item{
+    font-weight: 600;
+    color: #000000;
+    margin-right: 44px;
+    text-decoration: none;
+    position: relative;
+    transition: .3s;
+}
+.menu__item:last-child{
+    margin-right: 0;
+}
+.menu__item:hover{
+    color: #e51937;
+    transition: .3s;
+}
+.menu__item:hover:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: url('../img/border.svg') no-repeat;
+    position: absolute;
+    background-size: cover;
+    left: 0;
+    bottom: -5px;
+    transition: .3s;
+}
+.menu__item_active{
+    color: #e51937;
+}
+
+.menu__item_active:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: url('../img/border.svg') no-repeat;
+    position: absolute;
+    background-size: cover;
+    left: 0;
+    bottom: -5px;
+}
+
+/* Actions */
+.actions{
+    display: flex;
+    align-items: center;
+}
+.actions__link{
+    font-weight: 600;
+    color: #000000;
+    margin-right: 30px;
+    text-decoration: none;
+    transition: .3s;
+}
+.actions__link:hover{
+    color: #e51937;
+    transition: .3s;
+}
+.actions__button{
+    background: none;
+    border: none;
+    padding: 0;
+}
+.actions__button:hover{
+    cursor: pointer;
+}
+.actions__button:focus{
+    outline: none;
+}
+
+/* Title */
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.title__model{
+    font-size: 90px;
+    font-weight: 600;
+    margin-top: 58px;
+    margin-bottom: 0;
+}
+.title__image{
+    width: 968px;
+    margin-top: 25px;
+}
+.title__slogan{
+    font-size: 15px;
+    font-weight: medium;
+    margin: 0;
+    margin-top: -10px;  
+}
+.title__overlay{
+    position: absolute;
+    top: 58px;
+    left: -48px;
+    width: 100%;
+    z-index: -2;
+}
+
+/* Merits */
+.merits__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.merits__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 80px;
+}
+.merits__item:last-child{
+    margin-right: 0;
+}
+.merits__value{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+.merits__value span{
+    font-size: 35px;
+}
+.merits__icon{
+    height: 60px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.merits__btn{
+    display: inline-block;
+    border:2px solid #E51937;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 10px 42px;
+    text-transform: uppercase;
+    color: #e51937;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+.merits__btn:hover{
+    transition: .3s;
+    background-color: #e51937;
+    color: #ffffff;
+}
+.merits__descr{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/* Arrow */
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    animation: arrow  2s infinite ease;
+}
+
+/* Анимиация */
+
+@keyframes arrow {
+    from {transform: translateY(0);}
+    50% {transform: translateY(20px)}
+    to {transform: translateY(0);}
 }
