@@ -1,0 +1,101 @@
+@media screen and (max-width: 1470px) {
+  .title__overlay img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1341px) {
+  /* HEADER */
+  .header__wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header__top {
+    width: 100%;
+  }
+  .title__image {
+    width: 80%;
+  }
+  .title__overlay {
+    top: 70px;
+    left: auto;
+  }
+  /* .title__overlay img {
+    width: 100%;
+  } */
+}
+
+@media screen and (max-width: 1090px) {
+  /* HEADER */
+  .header__wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .merits__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .merits__item {
+    margin-right: 0;
+  }
+  .title__overlay {
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  /* HEADER */
+  .title__model {
+    font-size: 70px;
+  }
+
+  .merits__item {
+    width: 34%;
+  }
+  .title__overlay {
+    top: 120px;
+  }
+  .merits__value_up {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .actions__link {
+    display: none;
+  }
+  .title__model {
+    font-size: 50px;
+  }
+  .title__slogan {
+    margin-top: 0;
+  }
+  .merits__value {
+    font-size: 10px;
+  }
+  .merits__value span {
+    font-size: 20px;
+  }
+  .merits__btn {
+    padding: 5px 15px;
+    background-color: #e51937;
+    color: #ffffff;
+    font-size: 13px;
+  }
+  .merits__value_up {
+    color: #e51937;
+  }
+  .merits__item {
+    width: 47%;
+  }
+  .merits__icon {
+    transform: scale(0.8);
+  }
+  .merits__svg path{
+    fill: #e51937;
+  }
+}

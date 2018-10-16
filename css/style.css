@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 15px;
+    min-width: 320px;
 }
 /* Header */
 .header{
@@ -22,13 +23,18 @@ body{
 .header__merits{
     margin-top: 25px;
 }
+
 /* logo */
 .logo{
-    width: 166px;
+    width: 130px;
     height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo__image{
     width: 100%;
+    height: auto;
 }
 
 /* Menu */
@@ -154,6 +160,9 @@ body{
     font-size: 20px;
     line-height: 24px;
 }
+.merits__value_up{
+    text-transform: uppercase;
+}
 .merits__value span{
     font-size: 35px;
 }
@@ -190,8 +199,8 @@ body{
 .arrow{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
     animation: arrow  2s infinite ease;
+    padding-bottom: 20px;
 }
 
 /* Анимиация */
@@ -200,4 +209,9 @@ body{
     from {transform: translateY(0);}
     50% {transform: translateY(20px)}
     to {transform: translateY(0);}
+}
+
+/* Временные стили */
+.specifications ,.protection{
+    display: none;
 }
