@@ -52,10 +52,15 @@
   .title__model {
     font-size: 70px;
   }
-
-  .merits__item {
-    width: 34%;
+  .merits__list {
+    justify-content: space-around;
   }
+  .merits__item{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
   .title__overlay {
     top: 120px;
   }
@@ -89,13 +94,20 @@
   .merits__value_up {
     color: #e51937;
   }
-  .merits__item {
-    width: 47%;
+  .merits__item{
+    width: 50%;
+    display: flex;
+  }
+  .merits__item:nth-child(2n+1) {
+    justify-content: flex-start;
+  }
+  .merits__item:nth-child(2n) {
+    justify-content: flex-end;
   }
   .merits__icon {
     transform: scale(0.8);
   }
-  .merits__svg path{
+  .merits__svg path {
     fill: #e51937;
   }
 }
