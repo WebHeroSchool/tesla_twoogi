@@ -212,6 +212,92 @@ body{
 }
 
 /* Временные стили */
-.specifications ,.protection{
+.protection{
     display: none;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* Блок specifications */
+
+.specifications{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.specifications__wrap{
+    width: 1341px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.figure{
+    background: url('../img/wheel.jpg') no-repeat;
+    width: 100%;
+    background-position-x: -250px;
+    background-position-y: 100px;
+}
+.figure__title{
+    color: #e51937;
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: 80px;
+}
+.aside{
+    width: 440px;
+    background-color: #E51937;
+    color: #ffffff;
+    padding: 45px;
+}
+.aside__title{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    margin-bottom: 11px;
+}
+.aside__descr{
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: medium;
+    margin-bottom: 55px;
+}
+.merits__list_vertical{
+    display: flex;
+    flex-direction: column;
+}
+.merits__list_vertical .merits__item{
+    margin-right: 0;
+    margin-bottom: 35px;
+}
+.moreinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.moreinfo__info{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.moreinfo__image{
+    margin-right: 10px;
+}
+.moreinfo__order{
+    padding: 11px 22px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.moreinfo__order:hover{
+    color: #E51937;
+    background-color: #ffffff;
+    transition: .3s;
+}
+
+.specifications__aside .moreinfo{ 
+    margin-top: 150px;
 }
