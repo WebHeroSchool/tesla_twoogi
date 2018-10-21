@@ -211,10 +211,6 @@ body{
     to {transform: translateY(0);}
 }
 
-/* Временные стили */
-.protection{
-    display: none;
-}
 
 /* ----------------------------------------------------------------------------------- */
 
@@ -231,7 +227,7 @@ body{
     justify-content: space-between;
 }
 
-
+/* figure */
 .figure{
     background: url('../img/wheel.jpg') no-repeat;
     width: 100%;
@@ -244,6 +240,8 @@ body{
     font-weight: 600;
     margin-left: 80px;
 }
+
+/* aside */
 .aside{
     width: 440px;
     background-color: #E51937;
@@ -262,6 +260,7 @@ body{
     font-weight: medium;
     margin-bottom: 55px;
 }
+
 .merits__list_vertical{
     display: flex;
     flex-direction: column;
@@ -270,6 +269,7 @@ body{
     margin-right: 0;
     margin-bottom: 35px;
 }
+
 .moreinfo{
     display: flex;
     align-items: center;
@@ -300,4 +300,124 @@ body{
 
 .specifications__aside .moreinfo{ 
     margin-top: 150px;
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+/* protection */
+.protection__wrap{
+    width: 1341px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.protection{
+    display: flex;
+    justify-content: center;
+}
+
+/* rating */
+.rating__title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.rating__list{
+    padding-right: 30px;
+    margin-bottom: 100px;
+}
+.rating__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.rating__name{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.rating__name span{
+    opacity: .7;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.rating__assessment{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+/* generalization */
+.generalization{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.generalization__value{
+    font-size: 47px;
+    font-weight: bold;
+}
+.generalization__nominat{
+    font-size: 25px;
+}
+.generalization__image{
+    margin-right: 20px;
+}
+
+
+/* detailing */
+.detailing{
+    display: flex;
+    align-items: center;
+}
+.detailing__images{
+    position: relative;
+}
+.detailing__object{
+    margin-left: -100px;
+}
+.detailing__overlay{
+    position: absolute;
+    top: 50px;
+    z-index: -2;
+    right: 0;
+}
+.detailing__object img{
+    width: 100%;
+}
+
+
+.created{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.created__name{
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.created__name span{
+    color: #ffd22e;
+    font-size: 15px;
+    text-transform: none;
+    margin-left: 5px;
+}
+.created__descr{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 8px;
 }
