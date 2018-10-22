@@ -20,9 +20,43 @@
     top: 70px;
     left: auto;
   }
+  /* specifications */
+  .specifications__wrap {
+    width: 100%;
+  }
+  /* protection */
+  .protection__wrap{
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .protection__aside{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap
+  }
+  
+  .protection__aside .aside__moreinfo {
+    width: 100%;
+    justify-content: center;
+  }
+  .moreinfo__info span{
+    padding: 10px;
+  }
+  .detailing__object{
+    margin-left: 0;
+  }
+  .created{
+    bottom: 10px;
+    right: 10px;
+  }
   /* .title__overlay img {
     width: 100%;
   } */
+
+  
 }
 
 @media screen and (max-width: 1090px) {
@@ -45,6 +79,15 @@
   .title__overlay {
     top: 100px;
   }
+
+
+
+
+  /* specifications */
+
+  .merits__list_vertical {
+    align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -66,6 +109,50 @@
   }
   .merits__value_up {
     font-size: 16px;
+  }
+
+
+  /* specifications */
+  .specifications__wrap{
+    flex-direction: column;
+  }
+  .specifications__figure{
+    background: url('../img/wheel-m.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  .aside{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 30px;
+  }
+  .aside__merits{
+    display: none;
+  }
+  .aside__moreinfo{
+    display: none;
+  }
+  .aside__rating{
+    display: none;
+  }
+  .aside__generalization{
+    display: none;
+  }
+  .created{
+    display: none;
+  }
+  .aside__descr{
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  .figure__title{
+    margin-top: 0;
+  }
+  .figure__title{
+    display: none;
   }
 }
 
@@ -109,5 +196,10 @@
   }
   .merits__svg path {
     fill: #e51937;
+  }
+
+  /* specifications */
+  .specifications__figure{
+    height: 200px;
   }
 }
